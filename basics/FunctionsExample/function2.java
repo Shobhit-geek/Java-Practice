@@ -2,6 +2,7 @@ package basics.FunctionsExample;
 
 public class function2 {
 
+    // static methods - these can be directly call inside the same class by its name, no need to create object
     public static void sum(int a, int b){
         int c = 15; // method scope
         System.out.println(a+b+c);
@@ -20,7 +21,7 @@ public class function2 {
     //     System.out.println(sum);
     //     return sum;
     // }
-    
+
     public static void main(String[] args) {
         {
             // block scope
