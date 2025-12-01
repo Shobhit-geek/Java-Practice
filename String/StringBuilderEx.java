@@ -56,6 +56,31 @@ public class StringBuilderEx{
         // Substring: Returns a substring from the specified range
         // Syntax: sb.substring(startIndex, endIndex);
         System.out.println("Substring (1, 4): " + sb.substring(1, 4));
+
+        // --------- Example of StringBuffer ---------
+        // Creating a StringBuffer object
+        StringBuffer sbb = new StringBuffer("Hello");
+
+        // Appending to the StringBuffer
+        sbb.append(" World");
+        System.out.println("After append: " + sbb);
+
+        // Inserting into the StringBuffer
+        sbb.insert(5, ",");
+        System.out.println("After insert: " + sbb);
+
+        // Reversing the StringBuffer
+        sbb.reverse();
+        System.out.println("After reverse: " + sbb);
+
+        // Replacing in the StringBuffer
+        sbb.reverse(); // Reversing back to original
+        sbb.replace(0, 5, "Hi");
+        System.out.println("After replace: " + sbb);
+
+        // Deleting from the StringBuffer
+        sbb.delete(3, 5);
+        System.out.println("After delete: " + sbb);
     }
 }
 

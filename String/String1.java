@@ -40,3 +40,9 @@ public class String1 {
     }
 
 }
+
+// Why is String immutable in Java?
+// For security (e.g., file paths, URLs)
+// Thread safety
+// Used in hashing (in HashMap keys)
+// Improves performance (string pooling)
