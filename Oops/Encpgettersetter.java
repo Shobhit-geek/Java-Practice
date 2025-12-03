@@ -1,6 +1,12 @@
 package Oops;
 
 /*
+*These concepts aim to implement real-world entities in programs.
+--Encapsulation
+--Inheritance
+--Abstraction
+--Polymorphism
+
  * -------------------- ENCAPSULATION THEORY --------------------
  * Encapsulation means:
  * 1. Binding (grouping) data (variables) and methods together inside a class.
