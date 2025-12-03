@@ -1,7 +1,7 @@
 package Oops;
 
 /*
-*These concepts aim to implement real-world entities in programs.
+*These concepts aim to implement real-world entities in programs. (4 pillars of oops)
 --Encapsulation
 --Inheritance
 --Abstraction
