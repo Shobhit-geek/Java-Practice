@@ -46,3 +46,10 @@ public class String1 {
 // Thread safety
 // Used in hashing (in HashMap keys)
 // Improves performance (string pooling)
+
+
+// String str = "Shobhit";
+
+// for (char ch : str.toCharArray()) {
+//     System.out.println(ch);
+// }
