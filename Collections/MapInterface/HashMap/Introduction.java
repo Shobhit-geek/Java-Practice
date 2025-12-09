@@ -284,3 +284,5 @@ public class Introduction {
 
 // ✅ Resizing happens when:
 // size > capacity × 0.75
+
+// Fail-Fast vs Fail-Safe
