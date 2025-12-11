@@ -22,12 +22,12 @@ Code &amp; concepts related to java, system-design
 # Collections
 |---ArrayList -> LinkedList <br>
 |---SetInterface <br>
-        |-- HashSet -> LinkedHashSet -> TreeSet <br>
+&nbsp;&nbsp;&nbsp;|-- HashSet -> LinkedHashSet -> TreeSet <br>
 |---MapInerface <br>
-        |-- HashMap -> LinkedHashMap -> TreeMap <br>
-        |-- HashTable ->WeakHAshMap -> FailFast-FailSafe-Iterator [Others] <br>
+&nbsp;&nbsp;&nbsp;|-- HashMap -> LinkedHashMap -> TreeMap <br>
+&nbsp;&nbsp;&nbsp;|-- HashTable ->WeakHAshMap -> FailFast-FailSafe-Iterator [Others]<br>
 |---QueueDequeInterface <br>
-        |-- PriorityQueue -> ArrayDeque -> Vector -> Stack <br>
+&nbsp;&nbsp;&nbsp;|-- PriorityQueue -> ArrayDeque -> Vector -> Stack <br>
 |---Enumeration <br>
 |---UtilityClass <br>
 |---ConcurrentClass <br>
