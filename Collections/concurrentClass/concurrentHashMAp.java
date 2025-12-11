@@ -1,4 +1,4 @@
-package Collections.MapInterface.Others;
+package Collections.concurrentClass;
 
 import Oops.interfaces;
 
