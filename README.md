@@ -20,14 +20,29 @@ Code &amp; concepts related to java, system-design
 |---interfaces.java <br>
 
 # Collections
-|---ArrayList -> LinkedList <br>
-|---SetInterface <br>
-&nbsp;&nbsp;&nbsp;|-- HashSet -> LinkedHashSet -> TreeSet <br>
-|---MapInerface <br>
-&nbsp;&nbsp;&nbsp;|-- HashMap -> LinkedHashMap -> TreeMap <br>
-&nbsp;&nbsp;&nbsp;|-- HashTable ->WeakHAshMap -> FailFast-FailSafe-Iterator [Others]<br>
-|---QueueDequeInterface <br>
-&nbsp;&nbsp;&nbsp;|-- PriorityQueue -> ArrayDeque -> Vector -> Stack <br>
-|---Enumeration <br>
-|---UtilityClass <br>
-|---ConcurrentClass <br>
+Collections/
+│── ArrayList/
+│── LinkedList/
+│
+│── SetInterface/
+│     ├── HashSet.java
+│     ├── LinkedHashSet.java
+│     └── TreeSet.java
+│
+│── MapInterface/
+│     ├── HashMap.java
+│     ├── LinkedHashMap.java
+│     ├── TreeMap.java
+│     ├── HashTable.java
+│     ├── WeakHashMap.java
+│     └── FailFast_FailSafe_Iterator.java
+│
+│── QueueDequeInterface/
+│     ├── PriorityQueue.java
+│     ├── ArrayDeque.java
+│     ├── Vector.java
+│     └── Stack.java
+│
+│── Enumeration/
+│── UtilityClass/
+│── ConcurrentClass/
