@@ -1,6 +1,5 @@
 package StreamsPrac;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -24,6 +23,9 @@ public class Practice1 {
         System.out.print(evenNum);
 
         // way-3 creating stream using static method
-        // List
+        // Question: Find the maximum number from a list of integers.
+        List<Integer> list = Arrays.asList(10,23,11,5,1);
+        // Stream<Integer> stream = list.stream().max(Integer::compareTo);
+        
     }
 }

@@ -88,6 +88,67 @@ public class Theory {
         // Joining Strings:
         // Collectors.joining(", ")
 
+    //     ✅ How to Apply Streams on String in Java
+
+    //     🔑 Key Rule = String → convert → Stream → apply operations
+
+    //     1️⃣ Using chars() (MOST IMPORTANT)
+    //     ✔ Returns
+    //     IntStream of character Unicode values
+
+    //     ✔ Example
+    //     String s = "java";
+
+    //     s.chars()
+    //     .forEach(System.out::println); // gives unicode, to get see next example
+
+    //     Convert to characters
+    //     s.chars()
+    //     .mapToObj(c -> (char) c)
+    //     .forEach(System.out::println);
+
+    //     🔥 Most used in interviews
+
+    //     ✔ Frequency problems
+    //     ✔ First non-repeated character
+    //     ✔ Counting vowels/consonants
+
+    //     2️⃣ Using codePoints() (Unicode-safe)
+    //     ✔ Use when string may contain emojis / surrogate pairs
+    //     s.codePoints()
+    //     .mapToObj(Character::toChars)
+    //     .map(String::new)
+    //     .forEach(System.out::println);
+
+    //     📌 Mostly asked in advanced interviews.
+
+    //     3️⃣ Using split()
+    //     ✔ Best for words
+    //     String sentence = "java streams are powerful";
+
+    //     Arrays.stream(sentence.split(" "))
+    //         .forEach(System.out::println);
+
+    //     Use cases
+
+    //     ✔ Word count
+    //     ✔ Longest word
+    //     ✔ Frequency of words
+
+    //     4️⃣ Convert String → Character List → Stream
+    //     List<Character> chars =
+    //         s.chars()
+    //         .mapToObj(c -> (char) c)
+    //         .toList();
+
+    //     chars.stream().forEach(System.out::println);
+
+    //     5️⃣ Stream over String lines (Java 11+)
+    //     String text = "line1\nline2\nline3";
+
+    //     text.lines()
+    // .forEach(System.out::println);
+
     }
 }
 
@@ -106,3 +167,84 @@ public class Theory {
 // list.forEach(System.out::println);
 
 // Both are exactly the same.
+
+// Below is the complete, interview-ready list, with when & why to use each.
+
+// 🔥 Primitive Stream Conversion Methods (VERY IMPORTANT)
+
+// Java has 3 primitive streams:
+// IntStream
+// LongStream
+// DoubleStream
+
+// Each has special methods to convert to other stream types.
+
+// ✅ 1️⃣ mapToObj()
+// ✔ Converts Primitive → Object
+// IntStream.range(1, 4)
+//          .mapToObj(x -> "Num-" + x)
+//          .forEach(System.out::println);
+
+// 📌 Used when:
+
+// You want Stream<T>
+// You want to use collect(), groupingBy(), maps, lists
+
+// ✅ 2️⃣ mapToInt()
+// ✔ Converts Object → IntStream
+// List<String> list = List.of("a", "bb", "ccc");
+
+// list.stream()
+//     .mapToInt(String::length)
+//     .forEach(System.out::println);
+
+// 📌 Used when:
+
+// Working with numbers
+// You want sum(), average(), min(), max()
+
+// ✅ 3️⃣ mapToLong()
+// ✔ Converts Object → LongStream
+// list.stream()
+//     .mapToLong(String::length)
+//     .sum();
+
+// ✅ 4️⃣ mapToDouble()
+// ✔ Converts Object → DoubleStream
+// list.stream()
+//     .mapToDouble(Product::getPrice)
+//     .average();
+
+// 🔁 Conversion Between Primitive Streams
+// ✅ 5️⃣ asLongStream()
+// IntStream.range(1, 5)
+//          .asLongStream();
+
+// ✅ 6️⃣ asDoubleStream()
+// IntStream.range(1, 5)
+//          .asDoubleStream();
+
+// ✅ 7️⃣ boxed()
+// ✔ Converts Primitive → Wrapper Object Stream
+// IntStream.range(1, 4)
+//          .boxed()
+//          .collect(Collectors.toList());
+
+// Equivalent to:
+// mapToObj(Integer::valueOf)
+
+// 📌 Very common in interviews.
+
+// 🧠 Quick Summary Table
+// Method	Converts
+// mapToObj()	Primitive → Object
+// mapToInt()	Object → Int
+// mapToLong()	Object → Long
+// mapToDouble()	Object → Double
+// boxed()	Primitive → Wrapper Object
+// asLongStream()	Int → Long
+// asDoubleStream()	Int → Double
+
+// 🎯 When to Use What (Golden Rule)
+// ✔ If you want collections/maps → mapToObj() / boxed()
+// ✔ If you want math operations → mapToInt() / mapToLong() / mapToDouble()
