@@ -53,9 +53,9 @@ public class SpringDtaJpa {
 			  ↓
 		Hibernate (Implementation)
 			  ↓
-		JDBC
+		     JDBC
 			  ↓
-		Database
+		   Database
 
 	5️⃣ The Big Evolution: Repositories
 	-----------------------------------
@@ -123,7 +123,7 @@ public class SpringDtaJpa {
 
 	1️⃣1️⃣ What Spring Data JPA Improved Over JPA
 	--------------------------------------------
-	| Aspect         | JPA         | Spring Data JPA |
+	| Aspect         | JPA        | Spring Data JPA |
 	|---------------|-------------|-----------------|
 	| DAO Code      | Manual      | Auto-generated  |
 	| Boilerplate   | Medium      | Minimal         |

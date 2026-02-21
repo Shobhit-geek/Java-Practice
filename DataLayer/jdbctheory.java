@@ -29,13 +29,13 @@ package DataLayer;
     * Close Resources
 
     * Limitations of JDBC
-    
+   
     * Too much boilerplate
     * Manual object mapping
     * Error-prone resource handling
     * Tight coupling between SQL and Java code
     * 📌 This pain led to ORM frameworks
-    
+   
  * Example: Connecting to a MySQL database and executing a query
  * ------------------------------------------------------------
  * import java.sql.*;

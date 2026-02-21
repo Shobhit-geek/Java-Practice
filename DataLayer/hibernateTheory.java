@@ -15,13 +15,13 @@ package DataLayer;
  *
  * JDBC vs Hibernate:
  * ------------------
- * | Feature         | JDBC                        | Hibernate                  |
+ * | Feature         | JDBC                       | Hibernate                  |
  * |-----------------|----------------------------|----------------------------|
  * | SQL Handling    | Manual                     | Automatic (HQL/Criteria)   |
  * | Mapping         | Manual (ResultSet)         | Automatic (ORM)            |
  * | Transactions    | Manual                     | Automatic/Declarative      |
  * | Caching         | No                         | Yes                        |
- * | Portability     | Vendor-specific SQL         | Database-independent       |
+ * | Portability     | Vendor-specific SQL        | Database-independent       |
  *
  * Internal Architecture
     Application

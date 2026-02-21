@@ -31,7 +31,7 @@ import java.util.LinkedList;
 // | Insertion at Middle | ❌ O(n)          | ✅ O(1)                   |
 // | Deletion at Middle  | ❌ O(n)          | ✅ O(1)                   |
 // | Memory Usage        | ✅ Less          | ❌ More (extra pointers)  |
-// | Best Use            | Read-heavy apps   | Insert/Delete-heavy apps |
+// | Best Use            | Read-heavy apps   | Insert/Delete-heavy apps  |
 
 // ✅ Golden Rule:
 // More reading → ArrayList
